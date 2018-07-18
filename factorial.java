@@ -1,10 +1,7 @@
 package ksvp;
-
 import java.util.Scanner;
-
 public class factorial {
-
-	public static void main(String[] args) {
+ public static void main(String[] args) {
 		// TODO Auto-generated method stub
   int n,i,a=1;
   Scanner scan= new Scanner(System.in);
