@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class nonrepeatednumber {
    public static void main(String[] args) {
 		// TODO Auto-generated method stub
- int a,i,j,k=0,cnt=0;
+ int a,i,j,k=0,cnt=0,count=0;
  String b="";
  Scanner ss= new Scanner(System.in);
  a = ss. nextInt();
@@ -12,7 +12,8 @@ public class nonrepeatednumber {
 	 arr[i]=ss.nextInt();
 	 }
  for(i=0;i<a;i++){
-	 for(j=i+1,cnt=0;j<a;j++){
+	 for(j=i+1;j<a;j++){
+		 cnt=0;
 	 if(arr[i]==arr[j]){
 		 cnt++;
 		 for(k=j;k<a-1;k++) arr[k]=arr[k+1];
@@ -20,9 +21,11 @@ public class nonrepeatednumber {
 		 j--;
 	 }
 	 }
-	 if(cnt==0)System.out.println(arr[i]);
+	 if(cnt==0){
+		 
+		 System.out.println(arr[i]);
  }
    }
-}
+   }}
 
 
