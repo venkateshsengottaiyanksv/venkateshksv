@@ -4,17 +4,17 @@ public class stringnumeric {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-    String a;
+    String a;int x=0,y=0;
     Scanner scan=new Scanner(System.in);
     a= scan .nextLine();
-    for(int i=0;i<a.length();i++){
-    char ch=a.charAt(i);
-    
-    if(ch>=48 && ch<=57){
+      x = a.length();
+     String s = a.replaceAll("[a-zA-Z]","");
+     y = s.length();
+     if(x==y){
     	System.out.println("yes");
     }else{
     	System.out.println("no");
     }
-	break;}
-	}
 }
+	}
+
